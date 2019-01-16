@@ -28,7 +28,7 @@ exported_internal_shred_file() {
   unencrypted_file="$2"
   if [[ -f "$unencrypted_file" ]]; then
     echo "    SHRED: $unencrypted_file"
-    shred_file "$unencrypted_file"
+    rm "$unencrypted_file"
   else
     echo "NOT FOUND: $unencrypted_file"
   fi

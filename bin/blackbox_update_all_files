@@ -9,6 +9,7 @@ source "${0%/*}/_blackbox_common.sh"
 
 gpg_agent_notice
 disclose_admins
+change_to_vcs_root
 prepare_keychain
 
 echo '========== ENCRYPTED FILES TO BE RE-ENCRYPTED:'
